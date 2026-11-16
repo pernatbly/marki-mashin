@@ -3,12 +3,12 @@ tg.expand();
 
 // ===== ДАННЫЕ =====
 const BRANDS = {
-    ford:    { name: "Ford",    img: "botphoto/focus.png" },
-    renault: { name: "Renault", img: "botphoto/duster.png" },
-    lada:    { name: "Lada",    img: "botphoto/vesta.png" },
-    toyota:  { name: "Toyota",  img: "botphoto/camry.png" },
-    kia:     { name: "Kia",     img: "botphoto/rio.png" },
-    hyundai: { name: "Hyundai", img: "botphoto/creta.png" },
+    ford:    { name: "Ford",    img: "botphoto/ford.png" },
+    renault: { name: "Renault", img: "botphoto/renault.png" },
+    lada:    { name: "Lada",    img: "botphoto/lada.png" },
+    toyota:  { name: "Toyota",  img: "botphoto/toyota.png" },
+    kia:     { name: "Kia",     img: "botphoto/kia.png" },
+    hyundai: { name: "Hyundai", img: "botphoto/hyundai.png" },
 };
 
 const MODELS = {
