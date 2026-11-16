@@ -8,32 +8,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>Выбери марку машины</h1>
-        <div class="inner">
-            <div class="item">
-                <img src="botphoto/focus.png" alt="Ford" class="img">
-                <button class="btn" id="btn_ford">Ford</button>
-            </div>
-            <div class="item">
-                <img src="botphoto/duster.png" alt="Renault" class="img">
-                <button class="btn" id="btn_renault">Renault</button>
-            </div>
-            <div class="item">
-                <img src="botphoto/vesta.png" alt="Lada" class="img">
-                <button class="btn" id="btn_lada">Lada</button>
-            </div>
-            <div class="item">
-                <img src="botphoto/camry.png" alt="Toyota" class="img">
-                <button class="btn" id="btn_toyota">Toyota</button>
-            </div>
-            <div class="item">
-                <img src="botphoto/rio.png" alt="Kia" class="img">
-                <button class="btn" id="btn_kia">Kia</button>
-            </div>
-            <div class="item">
-                <img src="botphoto/creta.png" alt="Hyundai" class="img">
-                <button class="btn" id="btn_hyundai">Hyundai</button>
-            </div>
+        <!-- Экран 1: выбор марки -->
+        <div id="screen-brands">
+            <h1>Выбери марку</h1>
+            <div class="grid" id="brands-grid"></div>
+        </div>
+
+        <!-- Экран 2: выбор модели -->
+        <div id="screen-models" class="hidden">
+            <button class="back-btn" id="back-to-brands">← Назад к маркам</button>
+            <h1 id="models-title">Модели</h1>
+            <div class="grid" id="models-grid"></div>
+        </div>
+
+        <!-- Экран 3: карточка модели -->
+        <div id="screen-card" class="hidden">
+            <button class="back-btn" id="back-to-models">← Назад к моделям</button>
+            <img id="card-img" class="card-img" src="" alt="">
+            <h2 id="card-title"></h2>
+            <p id="card-desc"></p>
         </div>
     </div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
