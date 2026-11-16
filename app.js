@@ -1,7 +1,6 @@
 let tg = window.Telegram.WebApp;
 tg.expand();
 
-// ===== ДАННЫЕ =====
 const BRANDS = {
     ford:    { name: "Ford",    img: "botphoto/ford.png" },
     renault: { name: "Renault", img: "botphoto/renault.png" },
@@ -74,7 +73,6 @@ const MODELS = {
     ],
 };
 
-// ===== НАВИГАЦИЯ =====
 const screenBrands = document.getElementById("screen-brands");
 const screenModels = document.getElementById("screen-models");
 const screenCard   = document.getElementById("screen-card");
@@ -89,7 +87,6 @@ function showScreen(screen) {
     screen.classList.remove("hidden");
 }
 
-// Рендер марок
 function renderBrands() {
     brandsGrid.innerHTML = "";
     Object.keys(BRANDS).forEach(key => {
@@ -105,7 +102,6 @@ function renderBrands() {
     });
 }
 
-// Рендер моделей выбранной марки
 function openBrand(brandKey) {
     currentBrand = brandKey;
     modelsTitle.textContent = "Модели " + BRANDS[brandKey].name;
@@ -123,23 +119,17 @@ function openBrand(brandKey) {
     showScreen(screenModels);
 }
 
-// Карточка модели
 function openCard(model) {
     document.getElementById("card-img").src   = model.img;
     document.getElementById("card-title").textContent = model.name;
     document.getElementById("card-desc").textContent  = model.desc;
     showScreen(screenCard);
-
-    // Необязательно: сообщить боту, что пользователь посмотрел модель
-    // tg.sendData(model.id);  // раскомментируйте, если нужно логировать выбор
 }
 
-// Кнопки «Назад»
 document.getElementById("back-to-brands").addEventListener("click", () => showScreen(screenBrands));
 document.getElementById("back-to-models").addEventListener("click", () => {
     openBrand(currentBrand);
 });
 
-// ===== СТАРТ =====
 renderBrands();
 showScreen(screenBrands);
