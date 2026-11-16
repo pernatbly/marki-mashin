@@ -21,8 +21,6 @@ const MODELS = {
           desc: "Ford F-150 — это полноразмерный рамный пикап, который компания Ford выпускает с 1975 года. Модель стала настоящим символом американского рынка пикапов и олицетворяет универсальность." },
         { id: "ford_explorer", name: "Explorer", img: "botphoto/explorer.png",
           desc: "Ford Explorer — это американский средне- или полноразмерный кроссовер (с 1 по 4 поколения — среднеразмерный внедорожник), который выпускается с 1990 года." },
-        { id: "ford_mondeo",   name: "Mondeo",   img: "botphoto/mondeo.png",
-          desc: "Ford Mondeo — бизнес-седан (D-класс), выпускался с 1993 по 2022 год. Был популярен в Европе и России." },
     ],
     renault: [
         { id: "renault_duster",  name: "Duster",  img: "botphoto/duster.png",
@@ -33,8 +31,6 @@ const MODELS = {
           desc: "Renault Arkana — это компактный кроссовер, который компания Renault представила в 2018 году, а серийное производство начала в 2019-м. Название происходит от латинского слова arcanum — «тайна»." },
         { id: "renault_koleos",  name: "Koleos",  img: "botphoto/koleos.png",
           desc: "Renault Koleos — это компактный кроссовер, который компания Renault разработала как первый полноценный SUV. Модель выпускается с 2008 года." },
-        { id: "renault_fluence", name: "Fluence", img: "botphoto/fluence.png",
-          desc: "Renault Fluence — это седан C-класса, который выпускался французской компанией Renault с 2009 по 2017 год." },
     ],
     lada: [
         { id: "lada_2101",  name: "ВАЗ-2101", img: "botphoto/2101.png",
