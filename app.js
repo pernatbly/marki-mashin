@@ -49,7 +49,6 @@ const MODELS = {
     ],
 };
 
-// ===== НАВИГАЦИЯ =====
 const screenBrands = document.getElementById("screen-brands");
 const screenModels = document.getElementById("screen-models");
 const brandsGrid   = document.getElementById("brands-grid");
@@ -86,7 +85,6 @@ function openBrand(brandKey) {
             <img src="${m.img}" alt="${m.name}" class="img">
             <button class="btn">${m.name}</button>
         `;
-        // Выбор модели → отправляем id в бота и закрываем Web App
         div.addEventListener("click", () => {
             tg.sendData(m.id);
         });
@@ -97,6 +95,5 @@ function openBrand(brandKey) {
 
 document.getElementById("back-to-brands").addEventListener("click", () => showScreen(screenBrands));
 
-// ===== СТАРТ =====
 renderBrands();
 showScreen(screenBrands);
